@@ -16,6 +16,7 @@ public class GetTagName {
 		System.out.println(value);
 		Thread.sleep(3000);
 		driver.quit();
+		 
 
 
 

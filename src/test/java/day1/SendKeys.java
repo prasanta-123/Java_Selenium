@@ -1,11 +1,3 @@
-
-//launch browser
-//maximize
-//nav. to facebook
-//enter email in email text field(if you want to enter any value we use sendKeys())
-//wait
-//close
-
 package day1;
 
 import org.openqa.selenium.By;
