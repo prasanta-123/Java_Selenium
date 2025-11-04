@@ -13,7 +13,7 @@ public class Naviagte {
 	
 		driver.navigate().to("https://github.com/prasanta-123");
 		Thread.sleep(4000);
-	  for(int i=1;i<=100;i++) {
+	  for(int i=1;i<=50;i++) {
 		  Thread.sleep(4000);
 		  driver.navigate().refresh();
 		  
