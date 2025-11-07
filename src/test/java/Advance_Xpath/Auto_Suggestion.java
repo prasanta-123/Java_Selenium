@@ -17,7 +17,7 @@ public class Auto_Suggestion {
 		Thread.sleep(2000);
 		List<WebElement> allLink = driver.findElements(By.xpath("//li[@class='_3D0G9a']"));
 		int count=allLink.size();
-		System.out.println(count);
+		System.out.println("number of suggested items:"+count);
 		int a=1;
 		for (int i = 0; i < count; i++) {
 			System.out.println(a+" - "+ allLink.get(i).getText());
