@@ -7,23 +7,30 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FindElements {
+public class Amazon_AutoSugg {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
-		driver.get("https://www.flipkart.com/");
-		List<WebElement> allinks = driver.findElements(By.xpath("//a"));
-		int count=allinks.size();
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("laptop");
+		Thread.sleep(1000);
+		List<WebElement> sugg = driver.findElements(By.xpath("//div[@role='row']"));
+		int count = sugg.size();
 		System.out.println(count);
+		int a=1;
 		for (int i = 0; i < count; i++) {
-			System.out.println(allinks.get(i).getText());
-			
+			String display = sugg.get(i).getText();
+			System.out.println(a+") "+display);
+			a++;
 			Thread.sleep(50);
+			
+			
 			
 		}
 		driver.quit();
+		
+
 	}
 
 }
-

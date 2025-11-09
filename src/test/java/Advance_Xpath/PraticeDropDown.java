@@ -25,12 +25,14 @@ public class PraticeDropDown {
 		   Thread.sleep(1000);
 		   WebElement year = driver.findElement(By.id("year"));
 		   Select s2=new Select(year);
-		   s2.selectByIndex(22);
+		  // s2.selectByIndex(22);
+		  // s2.selectByVisibleText("2002");
+		   s2.selectByValue("2002");
 		   
 		   Thread.sleep(3000);
 		   driver.quit();
 		   
 
-	}
+	} 
 
 }
