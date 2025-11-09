@@ -18,9 +18,9 @@ public class PraticeDropDown {
 		   Select s1=new Select(day);
 		   s1.selectByIndex(26);
 		   Thread.sleep(1000);
-		   WebElement element = driver.findElement(By.id("month"));
+		   WebElement month = driver.findElement(By.id("month"));
 		   
-		   Select s=new Select(element);
+		   Select s=new Select(month);
 		   s.selectByIndex(2);
 		   Thread.sleep(1000);
 		   WebElement year = driver.findElement(By.id("year"));
