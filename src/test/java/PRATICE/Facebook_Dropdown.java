@@ -32,18 +32,18 @@ public class Facebook_Dropdown {
 				Thread.sleep(100);
 				
 //				Thread.sleep(1000);
-//				
-//	     WebElement year = driver.findElement(By.id("year"));
-//	     Select s3=new Select(year);
-//	     int total2=s3.getOptions().size();
-//				for (int j = 0; j < total2; j++) {
-//					s3.selectByIndex(i);
-//					Thread.sleep(10);
-//					
-				//}
+				
+	     WebElement year = driver.findElement(By.id("year"));
+	     Select s3=new Select(year);
+	     int total2=s3.getOptions().size();
+				for (int j = 0; j < total2; j++) {
+					s3.selectByIndex(i);
+					Thread.sleep(10);
+					
+				}
 				
 				
-		//	}
+		
 		
 		}
 		driver.quit();
