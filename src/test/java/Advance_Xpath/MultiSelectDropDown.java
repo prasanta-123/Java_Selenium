@@ -22,6 +22,20 @@ public class MultiSelectDropDown {
 			Thread.sleep(2000);
 			s.deselectAll();
 			Thread.sleep(3000);
+			s.selectByIndex(0);
+			Thread.sleep(1000);
+			s.selectByVisibleText("Mens Casual Premium ...");
+			Thread.sleep(1000);
+			s.selectByContainsVisibleText("Cotton ");
+			Thread.sleep(2000);
+			
+			s.deselectByIndex(0);
+			Thread.sleep(1000);
+			s.deselectByVisibleText("Mens Casual Premium ...");
+			Thread.sleep(1000);
+			s.deSelectByContainsVisibleText("Cotton ");
+			Thread.sleep(2000);
+			
 			driver.quit();
 			
 			
