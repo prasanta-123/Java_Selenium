@@ -20,7 +20,7 @@ public class MultiSelectDropDown {
 			Thread.sleep(1000);
 			s.selectByContainsVisibleText("Cotton ");
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//button[text()='Add']")).click();
+			s.deselectAll();
 			Thread.sleep(3000);
 			driver.quit();
 			
