@@ -23,34 +23,32 @@ public class Facebook_Dropdown {
 			
 			//Thread.sleep(1000);
 			
+	
+  	WebElement month = driver.findElement(By.id("month"));
+		Select s2=new Select(month);
+		int total1 = s2.getOptions().size();
+		for(int i1=0;i1<total1;i1++) {
+			s1.selectByIndex(i1);
+			Thread.sleep(100);
 			
-    	WebElement month = driver.findElement(By.id("month"));
-			Select s2=new Select(month);
-			int total1 = s2.getOptions().size();
-			for(int i1=0;i1<total1;i1++) {
-				s1.selectByIndex(i1);
-				Thread.sleep(100);
-				
-//				Thread.sleep(1000);
+			Thread.sleep(1000);
 				
 	     WebElement year = driver.findElement(By.id("year"));
 	     Select s3=new Select(year);
 	     int total2=s3.getOptions().size();
 				for (int j = 0; j < total2; j++) {
-					s3.selectByIndex(i);
-					Thread.sleep(10);
+				s3.selectByIndex(i);
+				Thread.sleep(10);
 					
-				}
-				
-				
-		
-		
 		}
-		driver.quit();
-		
-		
-
+					
+	
 	}
+		
+		
+		
+	}
+		driver.quit();
 
 	}
 }
