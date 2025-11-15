@@ -2,6 +2,7 @@ package Popups;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +19,7 @@ public class Alert_popups {
 		driver.findElement(By.xpath("//section[text()='Javascript']")).click();
 		driver.findElement(By.xpath("//td[text()='SAMSUNG Galaxy']/preceding-sibling::td/child::input")).click();
 		driver.findElement(By.id("deleteButton")).click();
-		org.openqa.selenium.Alert a = driver.switchTo().alert();
+		Alert a = driver.switchTo().alert();
 		Thread.sleep(3000);
 		System.out.println(a.getText());
 		a.accept();
