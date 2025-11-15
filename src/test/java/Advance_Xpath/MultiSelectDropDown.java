@@ -13,7 +13,9 @@ public class MultiSelectDropDown {
 		driver.get("https://demoapps.qspiders.com/ui/dropdown/multiSelect?sublist=1");
 			Thread.sleep(3000);
 			WebElement element = driver.findElement(By.id("select-multiple-native"));
+			Thread.sleep(5000);
 			Select s=new Select(element);
+			
 			s.selectByIndex(0);
 			Thread.sleep(1000);
 			s.selectByVisibleText("Mens Casual Premium ...");

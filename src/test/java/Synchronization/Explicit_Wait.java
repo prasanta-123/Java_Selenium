@@ -27,12 +27,14 @@ public class Explicit_Wait {
 		
 		
 		driver.findElement(By.linkText("Multi Select")).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		WebElement element=driver.findElement(By.id("select-multiple-native"));
 		Select  s=new Select(element);
+		
 		String options=s.getWrappedElement().getText();
 		System.out.println(options);
 		System.out.println("DONE");
+		
 	
 		
 		driver.quit();
