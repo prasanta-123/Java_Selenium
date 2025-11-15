@@ -24,6 +24,9 @@ public class Hidden_popups {
 		Select s1=new Select(year);
 		s1.selectByVisibleText("2010");
 		driver.findElement(By.linkText("4")).click();
+		Thread.sleep(1000);
+		
+		driver.findElement(By.id("alternative_number")).sendKeys("98576445678");
 		Thread.sleep(3000);
 		driver.quit();
 		
