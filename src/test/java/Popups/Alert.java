@@ -19,8 +19,11 @@ public class Alert {
 		driver.findElement(By.xpath("//td[text()='SAMSUNG Galaxy']/preceding-sibling::td/child::input")).click();
 		driver.findElement(By.id("deleteButton")).click();
 		org.openqa.selenium.Alert a = driver.switchTo().alert();
+		Thread.sleep(3000);
 		System.out.println(a.getText());
 		a.accept();
+		Thread.sleep(3000);
+		//a.dismiss();
 		driver.quit();
 		
 		 
