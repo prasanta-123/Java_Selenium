@@ -24,7 +24,7 @@ public class Alert_popups {
 		System.out.println(a.getText());
 		a.accept();
 		Thread.sleep(3000);
-		//a.dismiss();
+		//a.dismiss(); 
 		driver.quit();
 		
 		 
