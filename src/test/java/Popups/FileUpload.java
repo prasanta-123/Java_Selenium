@@ -15,7 +15,7 @@ public class FileUpload {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://demoapps.qspiders.com/ui/fileUpload?sublist=0");
 		
-		File f=new File("./src/test/resources/Testdata/noukri resume.pdf");
+		File f=new File("./src/test/resources/Testdata/Prasanta kumar mallik.pdf");
 		
 		String path = f.getAbsolutePath();
 		driver.findElement(By.id("resume")).sendKeys( path );
