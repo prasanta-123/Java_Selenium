@@ -13,7 +13,7 @@ public class Handling_Keyboard {
 		Robot r=new Robot();
 		r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_Q);
-		r.keyPress(KeyEvent.VK_SHIFT);
+		r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_S);
 		r.keyPress(KeyEvent.VK_P);
 	
