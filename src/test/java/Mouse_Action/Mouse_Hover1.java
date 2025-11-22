@@ -22,7 +22,7 @@ public class Mouse_Hover1 {
 		driver.findElement(By.linkText("Contact Us")).click();
 		String details = driver.findElement(By.xpath("(//div[@class='text-reset text-decoration-none'])[2]")).getText();
 		System.out.println(details);
-		driver.quit();
+		driver.quit();  
 		
 		
 		
